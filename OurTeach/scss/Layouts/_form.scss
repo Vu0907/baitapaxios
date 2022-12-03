@@ -1,0 +1,54 @@
+#form {
+  position: relative;
+  padding-top: 50px;
+
+  .form {
+    padding: 35px 25px 70px;
+    border-radius: 10px;
+    background-color: $color-white-1;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 400px;
+    .form-control {
+      border-radius: 50px;
+      padding: 20px 0px 20px 40px;
+      @include style-text($fs-5, $fw-2, $color-black-2);
+    }
+    span {
+      @include style-text($fs-2, $fw-1, $color-pink-1);
+      position: absolute;
+      top: 14px;
+      left: 20px;
+      line-height: 1;
+    }
+    .icon-select {
+      left: 14px;
+      top: 8px;
+    }
+  }
+
+  h2 {
+    @include style-text($fs-7, $fw-4, $color-black-1);
+    padding-bottom: 40px;
+  }
+
+  #Message {
+    border-radius: 20px;
+    padding: 10px 0px 0px 40px;
+  }
+
+  #seclect {
+    padding: 0px 0px 0px 38px;
+  }
+
+  .imgbot {
+    @include imgbackground();
+  }
+}
+
+@include responsive("large-down") {
+  .form {
+    width: 100% !important;
+  }
+}

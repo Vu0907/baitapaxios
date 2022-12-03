@@ -1,0 +1,36 @@
+#header {
+  .button {
+    @include button($color-pink-1, $pd-2);
+    margin: 0px 12px;
+    transition: all 0.5s;
+
+    @include style-text($fs-2, $fw-2, $color-white-1);
+    &:hover {
+      @include hoverbutton($color-white-1, $color-pink-1, $color-pink-1);
+    }
+  }
+}
+
+#footer {
+  .button {
+    @include button($color-white-1, $pd-4);
+    margin-top: 10px;
+    transition: all 0.5s;
+    @include style-text($fs-1, $fw-3, $color-black-1);
+    &:hover {
+      @include hoverbutton(transparent, $color-white-1, $color-white-1);
+    }
+  }
+}
+
+#form {
+  .button {
+    @include button($color-pink-1, $pd-3);
+    margin-top: 30px;
+    transition: all 0.5s;
+    @include style-text($fs-2, $fw-2, $color-white-1);
+    &:hover {
+      @include hoverbutton($color-white-1, $color-pink-1, $color-pink-1);
+    }
+  }
+}

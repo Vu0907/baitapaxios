@@ -1,0 +1,45 @@
+#card {
+  padding: 10px 0px;
+  background-color: $color-pink-2;
+  position: relative;
+  z-index: 4;
+  .card-content {
+    padding: 15px 0px;
+
+    .card {
+      border-radius: 10px;
+      transition: all 0.5s;
+      border: 1px transparent;
+
+      &:hover {
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+      .card-img-top {
+        max-width: 100%;
+        transform: scale(1);
+        transition: all 1s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      .card-body {
+        p {
+          @include style-text($fs-5, $fw-2, $color-pink-1);
+        }
+        h3 {
+          @include style-text($fs-6, $fw-4, $color-black-1);
+          margin: 7px 0px 10px;
+        }
+        span {
+          @include style-text($fs-1, $fw-2, $color-black-2);
+        }
+      }
+    }
+  }
+  .imgbot {
+    @include imgbackground();
+  }
+}

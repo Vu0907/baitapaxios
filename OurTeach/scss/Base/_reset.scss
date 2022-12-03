@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  margin-bottom: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.navbar {
+  padding: 0px !important;
+}
+.navbar-brand {
+  padding-top: 0px !important;
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+.form-control {
+  transition: all 0.5s;
+  &:focus {
+    box-shadow: none;
+    border-color: rgb(118, 118, 118);
+  }
+}
+
+li {
+  list-style: none;
+}

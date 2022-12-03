@@ -1,0 +1,43 @@
+@mixin style-text($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin button($bg, $pd) {
+  border-radius: 50px;
+  background-color: $bg;
+  padding: 11px $pd;
+  border: 1px solid transparent;
+}
+
+@mixin hoverbutton($bg, $color, $bd) {
+  background-color: $bg;
+  color: $color;
+  border: 1px solid $bd;
+}
+
+@mixin imgbackground() {
+  position: absolute;
+  width: 100%;;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -4;
+  pointer-events: none;
+  
+}
+
+@mixin responsive($screen) {
+  @if (map-has-key($map: $breakpoints, $key: $screen)) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $screen,
+    );
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "màn hình chưa khai báo";
+  }
+}

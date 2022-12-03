@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Our Teach</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div id="header">
+        <nav class="container navbar navbar-expand-lg navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img id="iconimg" src="./imgs/crest.png" alt="icon" />
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Elements</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="#">
+                <button class="button">
+                  <i class="fa-solid fa-phone-flip"></i>
+                  (+1) 555 234-8765
+                </button></a
+              >
+              <div id="headericon">
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Carousel -->
+    <section id="carousel">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 d-flex align-items-center">
+            <div class="text">
+              <span>ABOUT US</span>
+              <h1>The language <br />teaching experts</h1>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img src="./imgs/hero_team.png" alt="team" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="imgbot">
+        <img src="./imgs/Violet_top_left_wave.png" alt="" class="img-fluid" />
+      </div>
+    </section>
+
+    <!-- Card -->
+    <section id="card">
+      <div class="container">
+        <div id="teacherCards" class="row"></div>
+      </div>
+      <div class="imgbot">
+        <img
+          src="./imgs/Wave_White_bottom_right_shape_01.png"
+          alt=""
+          class="img-fluid"
+        />
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section id="form">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-12">
+            <div class="p-4">
+              <img src="./imgs/conatct_inner.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 d-flex align-items-center">
+            <div class="form">
+              <h2>Find Your Course</h2>
+              <div class="form-row">
+                <div class="form-group col-md-6 position-relative">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="form-name"
+                    placeholder="Name"
+                  />
+                  <span>
+                    <i class="fa-regular fa-id-badge"></i>
+                  </span>
+                </div>
+                <div class="form-group col-md-6 position-relative">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="form-email"
+                    placeholder="E-mail"
+                  />
+                  <div>
+                    <span>
+                      <i class="fa-regular fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group position-relative">
+                <select id="seclect" class="form-control">
+                  <option selected>English</option>
+                  <option>French</option>
+                  <option>Spanish</option>
+                  <option>German</option>
+                </select>
+                <div>
+                  <span class="icon-select">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group position-relative">
+                <textarea
+                  class="form-control"
+                  id="Message"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+                <div>
+                  <span>
+                    <i class="fa-regular fa-message"></i>
+                  </span>
+                </div>
+              </div>
+              <a href="#"> <button class="button">Send</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="imgbot">
+          <img
+            src="./imgs/accent_bottom_wave_01.png"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row" id="link">
+          <div class="col1 col-lg-3 col-sm-6 col-12 contact">
+            <h5>Contact us</h5>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Franklin St, Greenpoint Ave</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone-flip"></i>
+                <span>+2342 5446 67</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-clock"></i>
+                <span>Monday - Friday: 8 AM - 5 PM</span>
+              </li>
+            </ul>
+            <div class="footer-icon">
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col2 col-lg-3 col-sm-6 col-12 link-nav">
+            <h5>Quick Links</h5>
+            <div>
+              <ul>
+                <div></div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col3 col-lg-3 col-sm-6 col-12 link-nav">
+            <h5>About</h5>
+            <div>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Get Quote</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col4 col-lg-3 col-sm-6 col-12">
+            <h5 class="pb-4">Newsletter</h5>
+            <input type="text" placeholder="Your email" id="footer-input" />
+            <a href="#"> <button class="button">SUBSCRIBE</button></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("#header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+
+    <!-- Axios-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"
+      integrity="sha512-OdkysyYNjK4CZHgB+dkw9xQp66hZ9TLqmS2vXaBrftfyJeduVhyy1cOfoxiKdi4/bfgpco6REu6Rb+V2oVIRWg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./src/models/teacher.js"></script>
+    <script src="./src/services/teacherService.js"></script>
+    <script src="./src/controllers/main.js"></script>
+  </body>
+</html>

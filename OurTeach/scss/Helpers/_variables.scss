@@ -1,0 +1,38 @@
+// Color
+$color-pink-1: #b61984;
+$color-black-1: #191919;
+$color-black-2: #181818;
+$color-white-1: #ffffff;
+$color-pink-2: #dcd1f0;
+// font size
+$fs-1: 13px;
+$fs-2: 14px;
+$fs-3: 1.1rem;
+$fs-4: 55px;
+$fs-5: 12px;
+$fs-6: 1.4rem;
+$fs-7: 35px;
+//font weight
+$fw-1: 400;
+$fw-2: 500;
+$fw-3: 600;
+$fw-4: 700;
+
+// padding
+
+$pd-1: 10px;
+$pd-2: 20px;
+$pd-3: 50px;
+$pd-4: 70px;
+
+//break points
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px,
+  "extra-large-down": 1199.98px,
+  "large-down": 991.98px,
+  "medium-down": 767.98px,
+  "small-down": 575.98px,
+);

@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 0px !important;
+}
+
+.navbar-brand {
+  padding-top: 0px !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+.form-control {
+  transition: all 0.5s;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: rgb(118, 118, 118);
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: auto;
+  background-color: transparent;
+}
+header .sticky {
+  padding: 5px 0px;
+  background-color: #ffffff;
+}
+header .sticky #iconimg {
+  width: 0% !important;
+}
+header .sticky .nav-link::after {
+  bottom: -15px !important;
+}
+
+#header .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+  margin-right: 30px;
+  position: relative;
+}
+#header .nav-link:hover {
+  color: #b61984;
+}
+#header .nav-link:hover::after {
+  transform: scale(1);
+  width: 13px;
+  height: 13px;
+}
+#header .nav-link::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50px;
+  background-color: #b61984;
+  position: absolute;
+  left: 50%;
+  margin-left: -4px;
+  bottom: -24px;
+  transition: all 0.3s;
+  transform: scale(0);
+}
+#header .active .nav-link::after {
+  transform: scale(1);
+}
+#header #iconimg {
+  width: 90%;
+}
+#header #headericon a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #181818;
+  line-height: 46px;
+  padding-left: 8px;
+}
+#header #headericon a:hover {
+  color: #b61984;
+}
+#header .imgbot {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -4;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 991.98px) {
+  .navbar-toggler-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+  .sticky #iconimg {
+    width: 50% !important;
+  }
+  #header h1 {
+    font-size: 4vw;
+  }
+  #header .navbar {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #header #iconimg {
+    width: 70%;
+  }
+}
+#carousel {
+  background-image: url(../../imgs/yellow_top_wave_01.png);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 80px 0px;
+}
+#carousel .text {
+  z-index: 4;
+}
+#carousel .text span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+}
+#carousel .text h1 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #191919;
+}
+#carousel .imgbot {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -4;
+  pointer-events: none;
+}
+
+#card {
+  padding: 10px 0px;
+  background-color: #dcd1f0;
+  position: relative;
+  z-index: 4;
+}
+#card .card-content {
+  padding: 15px 0px;
+}
+#card .card-content .card {
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 1px transparent;
+}
+#card .card-content .card:hover {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#card .card-content .card .card-img-top {
+  max-width: 100%;
+  transform: scale(1);
+  transition: all 1s;
+}
+#card .card-content .card .card-img-top:hover {
+  transform: scale(1.1);
+}
+#card .card-content .card .card-body p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #b61984;
+}
+#card .card-content .card .card-body h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #191919;
+  margin: 7px 0px 10px;
+}
+#card .card-content .card .card-body span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #181818;
+}
+#card .imgbot {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -4;
+  pointer-events: none;
+}
+
+#form {
+  position: relative;
+  padding-top: 50px;
+}
+#form .form {
+  padding: 35px 25px 70px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 400px;
+}
+#form .form .form-control {
+  border-radius: 50px;
+  padding: 20px 0px 20px 40px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #181818;
+}
+#form .form span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b61984;
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  line-height: 1;
+}
+#form .form .icon-select {
+  left: 14px;
+  top: 8px;
+}
+#form h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #191919;
+  padding-bottom: 40px;
+}
+#form #Message {
+  border-radius: 20px;
+  padding: 10px 0px 0px 40px;
+}
+#form #seclect {
+  padding: 0px 0px 0px 38px;
+}
+#form .imgbot {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -4;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 991.98px) {
+  .form {
+    width: 100% !important;
+  }
+}
+#footer {
+  background-image: url(../../imgs/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+}
+#footer #link {
+  padding: 130px 0px;
+}
+#footer #link .contact .footer-icon a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 46px;
+  padding-right: 10px;
+  transition: all 0.5s;
+}
+#footer #link .contact .footer-icon a:hover {
+  color: #181818;
+}
+#footer #link .contact ul {
+  margin-bottom: 0;
+  padding-top: 20px;
+}
+#footer #link .contact ul li {
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+#footer #link .contact ul li i {
+  font-size: 14px;
+}
+#footer #link .contact ul li span {
+  font-size: 13px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+#footer #link .link-nav ul {
+  padding-top: 20px;
+}
+#footer #link .link-nav ul li {
+  position: relative;
+  margin-bottom: 15px;
+}
+#footer #link .link-nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin: 10px auto;
+  width: 25%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+#footer #link .link-nav ul li a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-bottom: 10px;
+  transition: all 0.5s;
+}
+#footer #link .link-nav ul li a:hover {
+  opacity: 0.8;
+}
+#footer #link h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+#footer #link #footer-input {
+  transition: all 0.5s;
+  background: transparent;
+  color: #ffffff;
+  text-align: center;
+  padding: 13px 30px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+}
+#footer #link #footer-input::-moz-placeholder {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+}
+#footer #link #footer-input:-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+}
+#footer #link #footer-input::placeholder {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+}
+#footer #link #footer-input:focus {
+  border: 1px solid #ffffff;
+  outline: none;
+}
+
+@media screen and (max-width: 991.98px) {
+  .col3, .col4 {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .col2 {
+    margin-top: 70px;
+  }
+  .col4 #footer-input {
+    width: 80%;
+  }
+  .col4 .button {
+    width: 80%;
+  }
+}
+#header .button {
+  border-radius: 50px;
+  background-color: #b61984;
+  padding: 11px 20px;
+  border: 1px solid transparent;
+  margin: 0px 12px;
+  transition: all 0.5s;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+#header .button:hover {
+  background-color: #ffffff;
+  color: #b61984;
+  border: 1px solid #b61984;
+}
+
+#footer .button {
+  border-radius: 50px;
+  background-color: #ffffff;
+  padding: 11px 70px;
+  border: 1px solid transparent;
+  margin-top: 10px;
+  transition: all 0.5s;
+  font-size: 13px;
+  font-weight: 600;
+  color: #191919;
+}
+#footer .button:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+#form .button {
+  border-radius: 50px;
+  background-color: #b61984;
+  padding: 11px 50px;
+  border: 1px solid transparent;
+  margin-top: 30px;
+  transition: all 0.5s;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+#form .button:hover {
+  background-color: #ffffff;
+  color: #b61984;
+  border: 1px solid #b61984;
+}/*# sourceMappingURL=style.css.map */
